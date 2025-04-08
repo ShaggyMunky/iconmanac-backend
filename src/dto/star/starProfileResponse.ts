@@ -13,7 +13,12 @@ export interface OrderDTO {
 export interface StarProfileResponse {
   id: string;
   firstName: string;
-  lastName: string;
-  image: string;
-  filmography: string;
+  lastName: string | null;
+  dob: Date | null;
+  height: number;
+  image: string | null;
+  filmography: string | null;
+  linkedTalentId: string | null;
+  firstScene: string | null;
+  latestScene: string | null;
 }
