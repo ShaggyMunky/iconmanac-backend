@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 
 import sql from "../db/db";
-import { StarProfileRow } from "../types/row/starProfileRow";
+import { StarProfileRow } from "../types/rows/starProfileRow";
 
 const queriesDir = "../db/sql/queries/";
 

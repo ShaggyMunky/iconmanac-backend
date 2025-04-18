@@ -1,7 +1,7 @@
-import { StarProfileRow } from "../../types/row/starProfileRow";
-import { StarProfileResponse } from "../../dto/star/starProfileResponse";
+import { StarProfileRow } from "../types/rows/starProfileRow";
+import { StarProfileResponse } from "../dto/star/starProfileResponse";
 
-import { feetToInches } from "../lengthConverter";
+import { feetToInches } from "../utils/lengthConverter";
 
 export function mapStarProfileData(
   rows: StarProfileRow[]

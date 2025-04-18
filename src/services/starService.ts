@@ -1,6 +1,6 @@
 import { StarProfileResponse } from "../dto/star/starProfileResponse";
 import { findstarProfile } from "../repositories/starRepository";
-import { mapStarProfileData } from "../utils/mappers/mapStarProfile";
+import { mapStarProfileData } from "../mappers/mapStarProfile";
 
 export async function getStarProfile(
   starId: string
