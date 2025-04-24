@@ -1,9 +1,9 @@
 import express from "express";
 
-import { readJsonDataHandler } from "../controllers/studioController";
+import { importFilmFileDataHandler } from "../controllers/studioController";
 
 const router = express.Router();
 
-router.get("/:id", readJsonDataHandler);
+router.post("/file/import", importFilmFileDataHandler);
 
 export default router;

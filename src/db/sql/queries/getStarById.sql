@@ -1,15 +1,15 @@
 SELECT 
-    [TalentId]
+    [StarId]
 ,   [FirstName]
 ,   [LastName]
+,   [RankId]
 ,   [Dob]
+,   [Height]
 ,   [Image]
 ,   [Filmography]
-,   [Feet]
-,   [Inches]
 ,   [StudioTalentGroupId]
 ,   [FirstScene]
 ,   [LatestScene]
 FROM
-[Talent]
-WHERE TalentId = @Id;
+[Star]
+WHERE starId = @Id;

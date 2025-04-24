@@ -2,13 +2,11 @@ import * as fs from "fs";
 import * as path from "path";
 
 import sql from "../db/db";
-import { StarProfileRow } from "../types/rows/starProfileRow";
+import { StarRow } from "../types/rows/starRow";
 
 const queriesDir = "../db/sql/queries/";
 
-export async function findstarProfile(
-  userId: string
-): Promise<StarProfileRow[]> {
+export async function findstarProfile(userId: string): Promise<StarRow[]> {
   try {
     const query = fs.readFileSync(
       path.join(__dirname, queriesDir + "getStarById.sql"),

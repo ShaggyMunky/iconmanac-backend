@@ -1,10 +1,10 @@
-export interface StarProfileRow {
-  TalentId: string;
+export interface StarRow {
+  StarId: string;
   FirstName: string;
   LastName: string | null;
+  Rank: number | null;
   Dob: string | null;
-  Feet: number | null;
-  Inches: number | null;
+  Height: number | null;
   Image: string | null;
   Filmography: string | null;
   StudioTalentGroupId: string | null;

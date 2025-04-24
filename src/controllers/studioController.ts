@@ -1,16 +1,10 @@
 import { Request, Response } from "express";
 
-import { readMindGeekFilms } from "../services/studioService";
+import { readFilmFile } from "../services/studioService";
 
-export async function readJsonDataHandler(req: Request, res: Response) {
-  const studioId = req.params.id;
-  let result = {};
-  switch (studioId) {
-    case "bzz":
-      result = await readMindGeekFilms();
-      break;
-    default:
-      break;
-  }
+export async function importFilmFileDataHandler(req: Request, res: Response) {
+  const { studioId, filePath } = req.body;
+  const result = await readFilmFile(studioId, filePath);
+
   res.json(result);
 }
